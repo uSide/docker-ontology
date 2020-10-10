@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV ONTOLOGY_VERSION=1.8.2
-ENV ONTOLOGY_CHECKSUM=aebb43eccd37b1178c82003d98d562cdd156303978948f3f23fee0048f076a66
+ENV ONTOLOGY_VERSION=2.1.0
+ENV ONTOLOGY_CHECKSUM=717b226a15b18c405ec9dd1da781769c9fcafacf964b777675ed9fb5dc153876
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://github.com/ontio/ontology/releases/download/v${ONTOLOGY_VERSION}/ontology-linux-amd64 \
